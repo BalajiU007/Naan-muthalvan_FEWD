@@ -3,140 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice Cream Sales</title>
+    <title>Balaji U - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #ff69b4;
+            background-color: #333;
             color: white;
-            padding: 20px;
             text-align: center;
+            padding: 40px;
+            position: relative;
         }
 
-        h1 {
-            margin: 0;
+        /* Profile Picture */
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+
+        nav {
+            text-align: center;
+            background: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
             padding: 20px;
-        }
-
-        .ice-cream-item {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin: 10px;
-            width: 250px;
-            text-align: center;
-            padding: 15px;
-        }
-
-        .ice-cream-item img {
-            width: 100%;
-            height: auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
 
-        .ice-cream-item h3 {
-            margin: 10px 0;
-            color: #ff69b4;
-        }
-
-        .price {
-            font-size: 20px;
-            color: #333;
-        }
-
-        .button {
-            background-color: #ff69b4;
+        .download-button {
+            display: inline-block;
+            background: #333;
             color: white;
-            padding: 10px;
-            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
             margin-top: 10px;
         }
 
-        .button:hover {
-            background-color: #ff1493;
-        }
-
         footer {
-            background-color: #ff69b4;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .cart {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ff69b4;
+            background: #333;
             color: white;
-            padding: 10px;
-            border-radius: 50%;
-            font-size: 18px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to Ice Cream Heaven!</h1>
-        <div class="cart">
-            Cart: <span id="cart-count">0</span>
-        </div>
+        <img src="BALAJI.jpg" alt="Profile Picture" class="profile-picture">
+        <h1>Balaji U</h1>
+        <p>BSC Computer Science | Web Developer</p>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <div class="ice-cream-item">
-            <img src="chocolate icecream.jpg" alt="Chocolate Ice Cream">
-            <h3>Chocolate Ice Cream</h3>
-            <p class="price">$4.99</p>
-            <button class="button" onclick="addToCart()">Add to Cart</button>
-        </div>
-        <div class="ice-cream-item">
-            <img src="vannilla icecream.jpg" alt="Vanilla Ice Cream">
-            <h3>Vanilla Ice Cream</h3>
-            <p class="price">$3.99</p>
-            <button class="button" onclick="addToCart()">Add to Cart</button>
-        </div>
-        <div class="ice-cream-item">
-            <img src="strawberry icecream.jpg" alt="Strawberry Ice Cream">
-            <h3>Strawberry Ice Cream</h3>
-            <p class="price">$4.49</p>
-            <button class="button" onclick="addToCart()">Add to Cart</button>
-        </div>
-        <div class="ice-cream-item">
-            <img src="mint ice cream.jpg" alt="Mint Ice Cream">
-            <h3>Mint Ice Cream</h3>
-            <p class="price">$4.29</p>
-            <button class="button" onclick="addToCart()">Add to Cart</button>
-        </div>
+        <h2 id="about">About Me</h2>
+        <p>I am a web developer passionate about building modern and user-friendly applications.</p>
+
+        <h2 id="skills">Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js & MERN Stack</li>
+            <li>Cloud Computing</li>
+            <li>Python & AI/ML</li>
+            <li>Spring Boot & Java</li>
+        </ul>
+
+        <h2 id="projects">Projects</h2>
+        <ul>
+            <li><a href="#">E-Commerce Website</a></li>
+            <li><a href="#">AI Chatbot</a></li>
+            <li><a href="#">College Portal</a></li>
+        </ul>
+
+        <h2 id="resume">Resume</h2>
+        <a href="BALAJI's Resume .pdf" class="download-button">Download CV</a>
+
+        <h2 id="contact">Contact</h2>
+        <p>Email: BalajiU@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/BalajiU</a></p>
+        <p>GitHub: <a href="#">github.com/BalajiU</a></p>
     </div>
 
     <footer>
-        <p>&copy; 2025 Ice Cream Heaven. All rights reserved.</p>
+        <p>&copy; 2025 Balaji U. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        let cartCount = 0;
-
-        function addToCart() {
-            cartCount++;
-            document.getElementById("cart-count").innerText = cartCount;
-        }
-    </script>
 </body>
 </html>
